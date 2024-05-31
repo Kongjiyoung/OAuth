@@ -18,8 +18,8 @@ public class UserConroller {
     @GetMapping("/oauth/callback")
     public String oauthCallback(String code){
         System.out.println("우와 콜백됐다 : "+code);
-        User sessionUser = userService.카카오로그인(code);
-        session.setAttribute("sessionUser", sessionUser);
+//        User sessionUser = userService.카카오로그인(code);
+//        session.setAttribute("sessionUser", sessionUser);
         return "redirect:/shop";
     }
 
